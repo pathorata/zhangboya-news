@@ -1,0 +1,143 @@
+/* 每日要闻 — zhangboya.top */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB",
+                 "Noto Sans SC", sans-serif;
+    background: #fdf6ec;
+    color: #2c2c2c;
+    line-height: 1.7;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+}
+
+/* ── 头部 ── */
+header {
+    text-align: center;
+    padding: 40px 0 30px;
+    border-bottom: 2px solid #d4a373;
+    margin-bottom: 36px;
+}
+header h1 {
+    font-size: 2.4rem;
+    color: #3d2c1e;
+    letter-spacing: 4px;
+}
+header .subtitle {
+    font-size: 1rem;
+    color: #8b7355;
+    margin-top: 8px;
+}
+header .update-time {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 6px;
+}
+
+/* ── 分区标题 ── */
+.news-section h2 {
+    font-size: 1.5rem;
+    color: #3d2c1e;
+    margin-bottom: 20px;
+    padding-left: 14px;
+    border-left: 5px solid #d4a373;
+}
+.tech-section h2 {
+    border-left-color: #4a90d9;
+}
+
+/* ── 卡片网格 ── */
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+@media (min-width: 700px) {
+    .news-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ── 卡片 ── */
+.news-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    border-left: 4px solid #d4a373;
+    transition: box-shadow 0.2s;
+}
+.news-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+.tech-card {
+    border-left-color: #4a90d9;
+}
+
+/* ── 排名编号 ── */
+.rank {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #d4a373;
+    min-width: 36px;
+    text-align: center;
+    flex-shrink: 0;
+    padding-top: 2px;
+}
+.tech-card .rank {
+    color: #4a90d9;
+}
+
+/* ── 内容 ── */
+.card-body h3 {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+}
+.card-body h3 a {
+    color: #2c2c2c;
+    text-decoration: none;
+}
+.card-body h3 a:hover {
+    color: #d4a373;
+    text-decoration: underline;
+}
+.card-body .summary {
+    font-size: 0.88rem;
+    color: #666;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.source-tag {
+    font-size: 0.78rem;
+    color: #fff;
+    background: #d4a373;
+    padding: 2px 10px;
+    border-radius: 12px;
+    display: inline-block;
+}
+.tech-tag {
+    background: #4a90d9;
+}
+
+/* ── 页脚 ── */
+footer {
+    text-align: center;
+    color: #aaa;
+    font-size: 0.82rem;
+    padding: 24px 0 12px;
+    border-top: 1px solid #e8d5b7;
+    margin-top: 20px;
+}
