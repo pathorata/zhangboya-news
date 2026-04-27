@@ -2,11 +2,11 @@
 
 # ── 要闻源 ──
 GENERAL_SOURCES = [
-    ("人民网-要闻", "http://www.people.com.cn/rss/yw.xml", True),
-    ("新华网-头条", "http://www.xinhuanet.com/rss/title.xml", True),
-    ("联合早报-中港台", "https://www.zaobao.com/rss/china", True),
-    ("参考消息-滚动", "http://www.cankaoxiaoxi.com/rss/roll.xml", True),
-    ("环球网", "https://www.huanqiu.com/rss/news.xml", False),
+    ("BBC中文", "https://www.bbc.com/zhongwen/simp/index.xml", True),
+    ("联合早报", "https://www.zaobao.com/rss/china", True),
+    ("DW中文", "https://rss.dw.com/rdf/rss-chi-all", True),
+    ("纽约时报中文", "https://cn.nytimes.com/rss/", True),
+    ("自由亚洲电台", "https://www.rfa.org/mandarin/rss", False),
 ]
 
 # ── 科技源 ──
